@@ -36,6 +36,21 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
+module expotwo (a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b); 
+and(carry,a,b);
+endmodule
+
+
+module expotwofull (a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = ((a^b)^c);
+assign carry = ((a&b)|(b&c)|(c&a));
+endmodule
+
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 Developed by: HARISH RAGAV S
