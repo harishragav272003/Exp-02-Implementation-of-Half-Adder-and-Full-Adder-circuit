@@ -76,7 +76,7 @@ RTL realization
 
 
 ### Result:
-Thus, the different digital IC's are studied and the truth table for different logic gates are verified.
+Thus the half adder and full adder circuits are designed and the truth tables is verified using quartus software.
 
 
 
